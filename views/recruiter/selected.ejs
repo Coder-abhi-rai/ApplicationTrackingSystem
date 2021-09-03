@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<div id="joblist" class="container mt-5">
+    <% candidates.slice().reverse().forEach(function(candidate) { %>
+        <div class="d-flex justify-content-center mb-3">
+            <div class="card" style="width: 50rem;">
+                <div class="card-body">
+                <h5 class="card-title"><strong>Candidate Details</strong></h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Name: <%= candidate.username%> %>  </li>
+                <li class="list-group-item">Location: <%= candidate.location%> %>  </li>
+                <li class="list-group-item">Gender: <%= candidate.gender%> </li>
+                <li class="list-group-item">Age: <%= candidate.age%>  </li>
+                <li class="list-group-item">Contact: <%= candidate.mobile%>  </li>
+                </ul>
+            </div>
+        </div>
+    <% }) %>
+</div>
+
+<%- include('../partials/footer') %>

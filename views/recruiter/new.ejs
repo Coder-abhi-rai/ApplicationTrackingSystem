@@ -1,0 +1,41 @@
+<%- include('../partials/header') %>
+<div class="fullbody bg">
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    <div class="container new w-50 p-5">
+
+        <form action="/jobs" method="POST">
+            
+            <div class="form-group text-white h5">
+                <label class="mt-3"for="jobtitle">Job Title</label>
+                <input type="text" class="form-control mt-2" id="jobtitle" name="jobtitle" placeholder="Job title">
+            </div>
+
+            <div class="form-group mt-3 text-white h5">
+                <label for="language">Language Required</label>
+                <input type="text" class="form-control mt-2" id="language" name="language" placeholder="Eg. C++, Java, etc.">
+            </div>
+
+            <div class="form-group mt-3 text-white h5">
+                <label for="location">Job Location</label>
+                <input type="text" class="form-control mt-2" id="location" name="location" placeholder="Location">
+            </div>
+
+            <div class="form-group mt-3 text-white h5">
+                <label for="ctc">Expected Salary (CTC)</label>
+                <input type="number" class="form-control mt-2" id="ctc" name="ctc" placeholder="CTC">
+            </div>
+
+            <div class="form-group mt-3 text-white h5">
+                <label for="lifespan">Lifespan of application</label>
+                <input type="number" class="form-control mt-2" id="lifespan" name="lifespan" placeholder="No. of days for application to remian">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3 mb-4">Create</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<%- include('../partials/footer') %>
